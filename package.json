@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/source-map-support",
+      "**/source-map-support/**"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --parallel start"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
